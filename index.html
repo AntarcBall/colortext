@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +18,7 @@
             while (c == t) t = Math.floor(Math.random()* 5 )
             text.innerHTML= name[t]
             text.style.position = 'absolute'
-            text.style.fontSize = '20px'
+            text.style.fontSize= '20px'
             switch(c){
                 case 0:text.style.color = 'red';break;
                 case 1:text.style.color = 'blue';break;
@@ -25,10 +27,15 @@
                 case 4:text.style.color = 'orange';break;
             }
             text.style.top = Math.floor(i / 8)*30+'px'
-            text.style.left = (i % 8) * 50+ 'px'
+            text.style.left = (i % 8) * 40+ 'px'
             document.body.appendChild( text );
             
         }
     </script>
+    <style>
+        div{
+            font-family: 'Gugi', cursive;
+        }
+    </style>
 </body>
 </html>
